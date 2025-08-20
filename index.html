@@ -2,74 +2,115 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Job Opportunities Poster</title>
+  <title>Referral Job Opportunities @ Sopra Steria India</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-      padding: 40px;
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
       color: #333;
     }
-    h1 {
+    header {
+      background: rgba(255,255,255,0.1);
+      padding: 40px 20px;
       text-align: center;
       color: #fff;
-      font-size: 46px;
-      margin-bottom: 40px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.4);
+      backdrop-filter: blur(4px);
+    }
+    header h1 {
+      font-size: 42px;
+      margin: 0;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header p {
+      margin-top: 8px;
+      font-size: 18px;
+      opacity: 0.9;
     }
     .poster {
-      max-width: 1100px;
-      margin: auto;
+      max-width: 1200px;
+      margin: 40px auto;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
       gap: 25px;
+      padding: 0 20px;
     }
     .job-card {
-      background: linear-gradient(160deg, #ffffff, #f0f9ff);
-      border-radius: 18px;
+      background: #fff;
+      border-left: 8px solid #1e88e5;
+      border-radius: 12px;
       padding: 20px;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+    .job-card:nth-child(2) { border-left-color: #43a047; }
+    .job-card:nth-child(3) { border-left-color: #fb8c00; }
+    .job-card:nth-child(4) { border-left-color: #8e24aa; }
+    .job-card:nth-child(5) { border-left-color: #e53935; }
+
     .job-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 22px rgba(0,0,0,0.3);
+      transform: translateY(-6px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.25);
     }
     .job-title {
       font-size: 22px;
-      font-weight: bold;
-      color: #ff4081;
+      font-weight: 600;
       margin-bottom: 10px;
+      color: #222;
     }
     .location {
-      font-weight: bold;
+      font-weight: 500;
       color: #555;
-      margin-bottom: 12px;
+      margin-bottom: 15px;
     }
     .section {
-      margin-bottom: 10px;
-      line-height: 1.5;
+      margin-bottom: 12px;
+      font-size: 15px;
+      line-height: 1.6;
     }
     .section strong {
-      color: #222;
+      color: #000;
     }
     .apply-link a {
       display: inline-block;
-      background: #ff4081;
+      background: #1e88e5;
       color: #fff;
-      padding: 10px 16px;
-      border-radius: 10px;
+      padding: 10px 18px;
+      border-radius: 8px;
       text-decoration: none;
-      font-weight: bold;
+      font-weight: 600;
       transition: background 0.3s;
     }
+    .job-card:nth-child(2) .apply-link a { background: #43a047; }
+    .job-card:nth-child(3) .apply-link a { background: #fb8c00; }
+    .job-card:nth-child(4) .apply-link a { background: #8e24aa; }
+    .job-card:nth-child(5) .apply-link a { background: #e53935; }
+
     .apply-link a:hover {
-      background: #e91e63;
+      filter: brightness(0.9);
+    }
+    footer {
+      text-align: center;
+      color: #fff;
+      padding: 30px 20px;
+      background: rgba(0,0,0,0.2);
+      margin-top: 40px;
+    }
+    footer p {
+      margin: 6px 0;
+      font-size: 14px;
+      opacity: 0.9;
     }
   </style>
 </head>
 <body>
-  <h1>🚀 Exciting Career Opportunities</h1>
+  <header>
+    <h1>🚀 Career Opportunities @ Sopra Steria India</h1>
+    <p>Join our team and build the future with us</p>
+  </header>
+
   <div class="poster">
 
     <!-- DevOps -->
@@ -78,7 +119,7 @@
       <div class="location">📍 Chennai | 6–12 years</div>
       <div class="section"><strong>Responsibilities:</strong> Manage AWS infra, CI/CD (GitHub, Jenkins), Ansible automation, SonarQube checks, troubleshoot issues.</div>
       <div class="section"><strong>Skills:</strong> AWS, GitHub, Jenkins, Ansible, SonarQube, Linux.</div>
-      <div class="apply-link"><a href="https://smrtr.io/t5h4c">Apply Here</a></div>
+      <div class="apply-link"><a href="https://smrtr.io/t5h4c" target="_blank">Apply Here</a></div>
     </div>
 
     <!-- MS BI -->
@@ -87,7 +128,7 @@
       <div class="location">📍 Chennai / Noida | 6–10 years</div>
       <div class="section"><strong>Responsibilities:</strong> Power BI dashboards, data modeling, ad-hoc analytics, optimize BI pipelines.</div>
       <div class="section"><strong>Skills:</strong> MSBI, Power BI, SQL, DAX, Data transformation.</div>
-      <div class="apply-link"><a href="https://smrtr.io/t5h6F">Apply Here</a></div>
+      <div class="apply-link"><a href="https://smrtr.io/t5h6F" target="_blank">Apply Here</a></div>
     </div>
 
     <!-- Apache Spark -->
@@ -96,7 +137,7 @@
       <div class="location">📍 Chennai | 8–10 years</div>
       <div class="section"><strong>Responsibilities:</strong> Build big data pipelines with Spark/Scala, SQL/PLSQL, data integration, ensure quality & security.</div>
       <div class="section"><strong>Skills:</strong> Apache Spark, Scala, SQL/PLSQL, Python, Oracle, PostgreSQL.</div>
-      <div class="apply-link"><a href="https://smrtr.io/t5h7b">Apply Here</a></div>
+      <div class="apply-link"><a href="https://smrtr.io/t5h7b" target="_blank">Apply Here</a></div>
     </div>
 
     <!-- Java -->
@@ -105,19 +146,24 @@
       <div class="location">📍 Chennai / Noida | 6–12 years</div>
       <div class="section"><strong>Responsibilities:</strong> Java Spring Boot REST APIs, microservices, collaborate with DevOps teams, code reviews.</div>
       <div class="section"><strong>Skills:</strong> Java, Spring Boot, REST APIs, Microservices, Oracle, PostgreSQL.</div>
-      <div class="apply-link"><a href="https://smrtr.io/t5h5y">Apply Here</a></div>
+      <div class="apply-link"><a href="https://smrtr.io/t5h5y" target="_blank">Apply Here</a></div>
     </div>
 
-    <!-- NEW: L2/L3 Support -->
+    <!-- L2/L3 Support -->
     <div class="job-card">
       <div class="job-title">L2/L3 Support Engineer – Micro-Segmentation</div>
       <div class="location">📍 Chennai | 6–12 years</div>
       <div class="section"><strong>Overview:</strong> Design, implement, and support network segmentation for enterprise security using Zero Trust, Illumio, Octoflow, and DevSecOps tools.</div>
       <div class="section"><strong>Skills:</strong> L2–L7 traffic, packet analysis, Zero Trust, Illumio PCE, Octoflow, CyberArk/Vault/PKI.</div>
       <div class="section"><strong>Certifications:</strong> Illumio Certified Engineer, GIAC GSEC/GCSA, ZTCA, CyberArk, Vault, PKI, CCNA/CCNP.</div>
-      <div class="apply-link"><a href="https://smrtr.io/t5jzm">Apply Here</a></div>
+      <div class="apply-link"><a href="https://smrtr.io/t5jzm" target="_blank">Apply Here</a></div>
     </div>
 
   </div>
+
+  <footer>
+    <p>© 2025 Sopra Steria India | Careers</p>
+    <p>For more opportunities, visit our official careers page</p>
+  </footer>
 </body>
 </html>
